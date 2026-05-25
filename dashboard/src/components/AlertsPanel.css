@@ -1,0 +1,92 @@
+.alerts-panel {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.alerts-panel h2 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.alerts-container {
+  flex: 1;
+  overflow-y: auto;
+  max-height: 400px;
+}
+
+.alerts-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.alerts-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.alerts-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.alerts-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.no-alerts {
+  text-align: center;
+  color: #999;
+  padding: 20px;
+}
+
+.alert-item {
+  border-left: 4px solid;
+  border-radius: 4px;
+  background: #f9f9f9;
+  padding: 12px;
+  margin-bottom: 10px;
+  font-size: 0.85rem;
+  transition: background 0.2s ease;
+}
+
+.alert-item:hover {
+  background: #f0f0f0;
+}
+
+.alert-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.alert-icon {
+  font-size: 1.2rem;
+}
+
+.alert-type {
+  color: #333;
+}
+
+.alert-taxi {
+  color: #666;
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+
+.alert-details p {
+  margin: 4px 0;
+  color: #555;
+}
+
+.alert-time {
+  color: #999;
+  font-size: 0.75rem;
+  margin-top: 8px !important;
+}
